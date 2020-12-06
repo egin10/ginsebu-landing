@@ -1,0 +1,123 @@
+body {
+  background-color: #F3E4DC;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+  content: '';
+  background-image: url(../img/bg-img.png);
+  background-size: 58vmax;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Navbar */
+.navbar {
+  margin: 15px 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+  color: #A1443F !important;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: #9D8280 !important;
+}
+
+a.nav-item:hover {
+  font-weight: bold !important;
+  color: #A1443F !important;
+}
+
+.navbar .nav-item {
+  margin: 0 20px;
+}
+
+.navbar input {
+  border-radius: 50px 0 0 50px !important;
+  width: 180px !important;
+  height: 30px !important;
+}
+
+.navbar button.btn-search {
+  background-color: #C78975 !important;
+  height: 30px !important;
+  border: 0 !important;
+  padding: 0 10px ;
+  border-radius: 0 50px 50px 0 !important;
+}
+
+/* Content */
+.content {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10vh;
+  margin: 3px;
+}
+
+.content h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #A1443F;
+  font-size: 40px;
+}
+
+.content h4 {
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #9D8280;
+  font-size: 16px;
+  letter-spacing: .4rem;
+  margin-top: 15px;
+}
+
+.content p {
+  color: #A24440;
+  line-height: 2rem;
+  font-weight: 200;
+}
+
+/* Utility */
+.btn-custom {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #A1443F !important;
+  border-radius: 50px !important;
+  color: #9D8280;
+  text-transform: uppercase;
+  padding: 5px 30px;
+}
+
+.btn-custom:hover {
+  color: white;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar .nav-item:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #A1443F;
+    margin: auto;
+    margin-bottom: -2px;
+    width: 50%;
+  }
+  
+  .content {
+    margin-top: 20vh;
+  }
+
+  .content h2 {
+    font-size: 42px;
+  }
+}
